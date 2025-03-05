@@ -63,105 +63,87 @@
   </head>
 
   <body>
-    <div class="container-xxl p-0" style="background-color: rgb(228, 172, 58)">
-      <!-- Spinner Start -->
-      <div
-        id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-      >
-        <div
-          class="spinner-border text-primary"
-          style="width: 3rem; height: 3rem"
-          role="status"
-        >
-          <span class="sr-only">Loading...</span>
+    <div
+      class="container-fluid px-0"
+      style="background-color: rgb(228, 172, 58)"
+    >
+      <div class="row gx-0">
+        <!-- Desktop Logo -->
+        <div class="col-lg-3 bg-dark d-none d-lg-block">
+          <a
+            href="index.html"
+            class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="img/logo.png"
+              class="desktop-logo"
+              style="max-width: 225px"
+            />
+          </a>
         </div>
-      </div>
-      <!-- Spinner End -->
 
-      <!-- Header Start -->
-      <div
-        class="container-fluid px-0"
-        style="background-color: rgb(228, 172, 58)"
-      >
-        <div class="row gx-0">
-          <!-- Desktop Logo -->
-          <div class="col-lg-3 bg-dark d-none d-lg-block">
-            <a
-              href="index.html"
-              class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="img/logo.png"
-                class="desktop-logo"
-                style="max-width: 225px"
-              />
-            </a>
-          </div>
-
-          <!-- Contact Info (Keeps Existing Section) -->
-          <div class="col-lg-9">
+        <!-- Contact Info (Keeps Existing Section) -->
+        <div class="col-lg-9">
+          <div
+            class="row gx-0 d-none d-lg-flex"
+            style="background-color: #362522"
+          >
             <div
-              class="row gx-0 d-none d-lg-flex"
-              style="background-color: #362522"
+              class="col-lg-7 text-start"
+              style="
+                padding-left: 0px !important;
+                padding-right: 3rem !important;
+              "
             >
               <div
-                class="col-lg-7 text-start"
-                style="
-                  padding-left: 0px !important;
-                  padding-right: 3rem !important;
-                "
+                class="h-100 d-inline-flex align-items-center py-2 me-4"
+                style="margin-left: 0.5rem !important"
               >
-                <div
-                  class="h-100 d-inline-flex align-items-center py-2 me-4"
-                  style="margin-left: 0.5rem !important"
-                >
-                  <i class="fa fa-envelope text-primary me-2"></i>
-                  <p class="mb-0" style="color: #fea116">
-                    sales.facadepro@gmail.com
-                  </p>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center py-2">
-                  <i class="fa fa-phone text-primary me-2"></i>
-                  <p class="mb-0" style="color: #fea116">+91 78882 48882</p>
-                </div>
+                <i class="fa fa-envelope text-primary me-2"></i>
+                <p class="mb-0" style="color: #fea116">
+                  sales.facadepro@gmail.com
+                </p>
+              </div>
+              <div class="h-100 d-inline-flex align-items-center py-2">
+                <i class="fa fa-phone text-primary me-2"></i>
+                <p class="mb-0" style="color: #fea116">+91 78882 48882</p>
               </div>
             </div>
-
-            <!-- Mobile Navbar -->
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-              <!-- Mobile Logo (Only visible on small screens) -->
-              <a href="index.html" class="navbar-brand d-block d-lg-none">
-                <img src="img/logo.png" class="mobile-logo" />
-              </a>
-
-              <button
-                type="button"
-                class="navbar-toggler"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mr-auto py-0">
-                  <a href="index.html" class="nav-item nav-link">Home</a>
-                  <a href="about.html" class="nav-item nav-link">About Us</a>
-                  <a href="service.html" class="nav-item nav-link">Services</a>
-                  <a href="gallery.html" class="nav-item nav-link"
-                    >Product Gallery</a
-                  >
-                  <a href="project.html" class="nav-item nav-link"
-                    >Project Gallery</a
-                  >
-                  <a href="client.html" class="nav-item nav-link">Client</a>
-                  <a href="brand.html" class="nav-item nav-link">Brands</a>
-                  <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-              </div>
-            </nav>
           </div>
+
+          <!-- Mobile Navbar -->
+          <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+            <!-- Mobile Logo (Only visible on small screens) -->
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+              <img src="img/logo.png" class="mobile-logo" />
+            </a>
+
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav mr-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="gallery.html" class="nav-item nav-link"
+                  >Product Gallery</a
+                >
+                <a href="project.html" class="nav-item nav-link"
+                  >Project Gallery</a
+                >
+                <a href="client.html" class="nav-item nav-link">Client</a>
+                <a href="brand.html" class="nav-item nav-link">Brands</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </div>
