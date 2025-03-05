@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Facadepro</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <!-- Bootstrap CSS (optional) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon" />
+    <!-- Other head elements -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .map-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Aspect ratio for responsive scaling (16:9) */
+        height: 0;
+        overflow: hidden;
+      }
+
+      .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-xxl p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Header Start -->
+      <div
+        class="container-fluid px-0"
+        style="background-color: rgb(228, 172, 58)"
+      >
+        <div class="row gx-0">
+          <!-- Desktop Logo -->
+          <div class="col-lg-3 bg-dark d-none d-lg-block">
+            <a
+              href="index.html"
+              class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="img/logo.png"
+                class="desktop-logo"
+                style="max-width: 225px"
+              />
+            </a>
+          </div>
+
+          <!-- Contact Info (Keeps Existing Section) -->
+          <div class="col-lg-9">
+            <div
+              class="row gx-0 d-none d-lg-flex"
+              style="background-color: #362522"
+            >
+              <div
+                class="col-lg-7 text-start"
+                style="
+                  padding-left: 0px !important;
+                  padding-right: 3rem !important;
+                "
+              >
+                <div
+                  class="h-100 d-inline-flex align-items-center py-2 me-4"
+                  style="margin-left: 0.5rem !important"
+                >
+                  <i class="fa fa-envelope text-primary me-2"></i>
+                  <p class="mb-0" style="color: #fea116">
+                    sales.facadepro@gmail.com
+                  </p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-2">
+                  <i class="fa fa-phone text-primary me-2"></i>
+                  <p class="mb-0" style="color: #fea116">+91 78882 48882</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Navbar -->
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+              <!-- Mobile Logo (Only visible on small screens) -->
+              <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <img src="img/logo.png" class="mobile-logo" />
+              </a>
+
+              <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                  <a href="index.html" class="nav-item nav-link">Home</a>
+                  <a href="about.html" class="nav-item nav-link">About Us</a>
+                  <a href="service.html" class="nav-item nav-link">Services</a>
+                  <a href="gallery.html" class="nav-item nav-link"
+                    >Product Gallery</a
+                  >
+                  <a href="project.html" class="nav-item nav-link"
+                    >Project Gallery</a
+                  >
+                  <a href="client.html" class="nav-item nav-link">Client</a>
+                  <a href="brand.html" class="nav-item nav-link">Brands</a>
+                  <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Header End -->
+
+    <!-- service Start -->
+    <div class="container-xxl py-5">
+      <div class="container" style="background-color: aliceblue">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <!-- <h6 class="section-title text-center text-primary text-uppercase">Contact Us</h6> -->
+          <h1 class="mb-5">
+            <span class="text-primary text-uppercase">Get</span> IN TOUCH WITH
+            US :
+          </h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="row gy-4 justify-content-center text-center">
+              <div class="col-md-4">
+                <h6
+                  class="section-title text-start text-primary text-uppercase"
+                >
+                  Email
+                </h6>
+                <p>
+                  <i class="fa fa-envelope text-primary me-2"></i
+                  >sales.facadepro@gmail.com
+                </p>
+              </div>
+              <div class="col-md-4">
+                <h6
+                  class="section-title text-start text-primary text-uppercase"
+                >
+                  Mobile Number
+                </h6>
+                <p>
+                  <i class="fa fa-phone text-primary me-2"></i>+91 78882 48882
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.389016035849!2d73.93169987442926!3d18.46603007083946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ebe340d99ee1%3A0x1f7b5bee7b935037!2sMonica%20Corner!5e0!3m2!1sen!2sin!4v1735488224645!5m2!1sen!2sin"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="wow fadeInUp" data-wow-delay="0.2s">
+              <form action="https://formspree.io/f/xrbzbzkr" method="POST">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                        name="fname"
+                      />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Your Email"
+                        name="email"
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder="Subject"
+                        name="subject"
+                      />
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave a message here"
+                        name="message"
+                        id="message"
+                        style="height: 150px"
+                      ></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sevice End -->
+    <!-- Footer Start -->
+
+    <div
+      class="container-fluid bg-dark text-light footer wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container pb-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+              style="height: 100%; width: 100%"
+            >
+              <img
+                src="img/logo.png"
+                class="img-fluid"
+                style="max-width: 100%; height: auto"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6
+              class="section-title text-start text-primary text-uppercase mb-4"
+            >
+              Contact
+            </h6>
+            <p class="mb-2">
+              <i class="fa fa-map-marker me-3"></i>No. 503, 5th Floor, Monica
+              Corner, Handewadi Road, Satav Nagar, Pune 411 028, Maharashtra .
+            </p>
+            <p class="mb-2"><i class="fa fa-phone me-3"></i>+91 7888248882</p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>sales.facadepro@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12">
+            <div class="row gy-5 g-4">
+              <div class="col-md-6">
+                <h6
+                  class="section-title text-start text-primary text-uppercase mb-4"
+                >
+                  Company
+                </h6>
+                <a class="btn btn-link" href="index.html">Home</a>
+                <a class="btn btn-link" href="about.html">About Us</a>
+                <a class="btn btn-link" href="service.html">Service</a>
+                <a class="btn btn-link" href="gallery.html">Gallery</a>
+                <a class="btn btn-link" href="testimonial.html">Testimonial</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+              </div>
+              <div class="col-md-6">
+                <h6
+                  class="section-title text-start text-primary text-uppercase mb-4"
+                >
+                  Services
+                </h6>
+                <a class="btn btn-link" href="">Cement Board Cladding</a>
+                <a class="btn btn-link" href="">Aluminium Sheet Cladding</a>
+                <a class="btn btn-link" href="">Polycarbonade Roofing</a>
+                <a class="btn btn-link" href="">Frameless Railing</a>
+                <a class="btn btn-link" href="">Glass Floor </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              <a class="border-bottom" href="#"></a>All Right Reserved
+              Facadepro.
+
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              Designed By
+              <a class="" href="https://www.gptsoftwares.in/index.html"
+                >GPT SOFTWARE</a
+              >
+            </div>
+            <div class="col-md-6 text-center text-md-end"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      />
+      <a
+        href="https://api.whatsapp.com/send/?phone=7888248882&text=want+to+know+more about+us&type=phone_number&app_absent=0"
+        class="float"
+        target="_blank"
+      >
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      id="scroll-to-top"
+      class="dmtop global-radius show"
+      style="bottom: 10px"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <title>Facadepro</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+  <!-- Bootstrap CSS (optional) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Icon Font Stylesheet -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link
+    href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Other head elements -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+  />
+
+  <style>
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes gradientChange {
+      0% {
+        background: linear-gradient(90deg, #1a1a1a, #333333);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      50% {
+        background: linear-gradient(90deg, #333333, #1a1a1a);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      100% {
+        background: linear-gradient(90deg, #1a1a1a, #333333);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    }
+
+    h3 {
+      font-family: "Arial", sans-serif;
+      font-size: 2rem; /* Adjusted for h3 size */
+      transition: all 0.6s;
+    }
+
+    h3:hover {
+      animation: none;
+      transform: scale(1.1);
+      background: linear-gradient(90deg, #000000, #555555);
+      color: transparent;
+    }
+    /* Gallery Layout */
+    .thumbnail-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .thumbnail-box {
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      border-radius: 10px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border: 2px solid transparent;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 8px #362522;
+      cursor: pointer;
+    }
+
+    .thumbnail-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .thumbnail-box:hover {
+      border: 2px solid #362522;
+      box-shadow: 0 6px 12px #362522;
+    }
+
+    .thumbnail-box:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .thumbnail-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .thumbnail-container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container-xxl p-0" style="background-color: rgb(228, 172, 58)">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Header Start -->
+      <div
+        class="container-fluid px-0"
+        style="background-color: rgb(228, 172, 58)"
+      >
+        <div class="row gx-0">
+          <!-- Desktop Logo -->
+          <div class="col-lg-3 bg-dark d-none d-lg-block">
+            <a
+              href="index.html"
+              class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="img/logo.png"
+                class="desktop-logo"
+                style="max-width: 225px"
+              />
+            </a>
+          </div>
+
+          <!-- Contact Info (Keeps Existing Section) -->
+          <div class="col-lg-9">
+            <div
+              class="row gx-0 d-none d-lg-flex"
+              style="background-color: #362522"
+            >
+              <div
+                class="col-lg-7 text-start"
+                style="
+                  padding-left: 0px !important;
+                  padding-right: 3rem !important;
+                "
+              >
+                <div
+                  class="h-100 d-inline-flex align-items-center py-2 me-4"
+                  style="margin-left: 0.5rem !important"
+                >
+                  <i class="fa fa-envelope text-primary me-2"></i>
+                  <p class="mb-0" style="color: #fea116">
+                    sales.facadepro@gmail.com
+                  </p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-2">
+                  <i class="fa fa-phone text-primary me-2"></i>
+                  <p class="mb-0" style="color: #fea116">+91 78882 48882</p>
+                </div>
+              </div>
+
+              <!-- Mobile Navbar -->
+              <nav
+                class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0"
+              >
+                <!-- Mobile Logo (Only visible on small screens) -->
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                  <img src="img/logo.png" class="mobile-logo" />
+                </a>
+
+                <button
+                  type="button"
+                  class="navbar-toggler"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarCollapse"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="service.html" class="nav-item nav-link"
+                      >Services</a
+                    >
+                    <a href="gallery.html" class="nav-item nav-link"
+                      >Product Gallery</a
+                    >
+                    <a href="project.html" class="nav-item nav-link"
+                      >Project Gallery</a
+                    >
+                    <a href="client.html" class="nav-item nav-link">Client</a>
+                    <a href="brand.html" class="nav-item nav-link">Brands</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="container">
+        <h3
+          class="text-center fw-bold position-relative"
+          style="
+            cursor: pointer;
+            animation: pulse 2s infinite, gradientChange 5s infinite;
+          "
+        >
+          PROJECT GALLERY
+        </h3>
+
+        <div class="thumbnail-container">
+          <!-- Image Thumbnails -->
+          <div class="thumbnail-box" data-index="0">
+            <img src="./img/portfolio/10.jpg" alt="Portfolio Image 1" />
+          </div>
+          <div class="thumbnail-box" data-index="1">
+            <img src="./img/portfolio/12.jpg" alt="Portfolio Image 2" />
+          </div>
+          <div class="thumbnail-box" data-index="0">
+            <img src="./img/portfolio/13.jpg" alt="Portfolio Image 1" />
+          </div>
+          <div class="thumbnail-box" data-index="1">
+            <img src="./img/portfolio/14.jpg" alt="Portfolio Image 2" />
+          </div>
+          <div class="thumbnail-box" data-index="0">
+            <img src="./img/portfolio/16.jpg" alt="Portfolio Image 1" />
+          </div>
+          <div class="thumbnail-box" data-index="1">
+            <img src="./img/portfolio/17.jpg" alt="Portfolio Image 2" />
+          </div>
+
+          <div class="thumbnail-box" data-index="2">
+            <img src="./img/portfolio/15.jpg" alt="Portfolio Image 3" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/18.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/19.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/20.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/21.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/22.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/23.jpg" alt="Portfolio Image 4" />
+          </div>
+          <!-- <div class="thumbnail-box" data-index="3"> -->
+          <!-- <img src="./img/portfolio/24.jpg" alt="Portfolio Image 4"> -->
+          <!-- </div> -->
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/25.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/26.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/27.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/28.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/29.jpg" alt="Portfolio Image 4" />
+          </div>
+          <!-- <div class="thumbnail-box" data-index="3"> -->
+          <!-- <img src="./img/portfolio/30.jpg" alt="Portfolio Image 4"> -->
+          <!-- </div> -->
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/31.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/32.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/33.jpg" alt="Portfolio Image 4" />
+          </div>
+          <div class="thumbnail-box" data-index="3">
+            <img src="./img/portfolio/34.jpg" alt="Portfolio Image 4" />
+          </div>
+          <!-- <div class="thumbnail-box" data-index="3"> -->
+          <!-- <img src="./img/Products/Semi Unitized Glazing.png" alt="Portfolio Image 4"> -->
+          <!-- </div> -->
+        </div>
+      </div>
+
+      <!-- Modal with Carousel -->
+      <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carouselExample"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./img/portfolio/10.jpg"
+                      class="d-block w-100"
+                      alt="Portfolio Image 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/portfolio/12.jpg"
+                      class="d-block w-100"
+                      alt="Portfolio Image 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/portfolio/12.jpg"
+                      class="d-block w-100"
+                      alt="Portfolio Image 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/portfolio/14.jpg"
+                      class="d-block w-100"
+                      alt="Portfolio Image 4"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/portfolio/13.jpg"
+                      class="d-block w-100"
+                      alt="Portfolio Image 4"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/portfolio/17.jpg"
+                      class="d-block w-100"
+                      alt="Portfolio Image 4"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/portfolio/14.jpg"
+                      class="d-block w-100"
+                      alt="Portfolio Image 4"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!-- Footer Start -->
+
+    <div
+      class="container-fluid bg-dark text-light footer wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container pb-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+              style="height: 100%; width: 100%"
+            >
+              <img
+                src="img/logo.png"
+                class="img-fluid"
+                style="max-width: 100%; height: auto"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6
+              class="section-title text-start text-primary text-uppercase mb-4"
+            >
+              Contact
+            </h6>
+            <p class="mb-2">
+              <i class="fa fa-map-marker me-3"></i>No. 503, 5th Floor, Monica
+              Corner, Handewadi Road, Satav Nagar, Pune 411 028, Maharashtra .
+            </p>
+            <p class="mb-2"><i class="fa fa-phone me-3"></i>+91 7888248882</p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>sales.facadepro@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12">
+            <div class="row gy-5 g-4">
+              <div class="col-md-6">
+                <h6
+                  class="section-title text-start text-primary text-uppercase mb-4"
+                >
+                  Company
+                </h6>
+                <a class="btn btn-link" href="index.html">Home</a>
+                <a class="btn btn-link" href="about.html">About Us</a>
+                <a class="btn btn-link" href="service.html">Service</a>
+                <a class="btn btn-link" href="gallery.html">Gallery</a>
+                <a class="btn btn-link" href="testimonial.html">Testimonial</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+              </div>
+              <div class="col-md-6">
+                <h6
+                  class="section-title text-start text-primary text-uppercase mb-4"
+                >
+                  Services
+                </h6>
+                <a class="btn btn-link" href="">Cement Board Cladding</a>
+                <a class="btn btn-link" href="">Aluminium Sheet Cladding</a>
+                <a class="btn btn-link" href="">Polycarbonade Roofing</a>
+                <a class="btn btn-link" href="">Frameless Railing</a>
+                <a class="btn btn-link" href="">Glass Floor </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              <a class="border-bottom" href="#"></a>All Right Reserved
+              Facadepro.
+
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              Designed By
+              <a class="" href="https://www.gptsoftwares.in/index.html"
+                >GPT SOFTWARE</a
+              >
+            </div>
+            <div class="col-md-6 text-center text-md-end"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      />
+      <a
+        href="https://api.whatsapp.com/send/?phone=7888248882&text=want+to+know+more about+us&type=phone_number&app_absent=0"
+        class="float"
+        target="_blank"
+      >
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      id="scroll-to-top"
+      class="dmtop global-radius show"
+      style="bottom: 10px"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- JavaScript for Modal and Carousel -->
+    <script>
+      document.querySelectorAll(".thumbnail-box").forEach((thumbnail) => {
+        thumbnail.addEventListener("click", function () {
+          let index = this.getAttribute("data-index");
+          let carousel = document.querySelector("#carouselExample");
+          let activeItem = carousel.querySelector(".carousel-item.active");
+
+          // Remove active class from currently active item
+          if (activeItem) activeItem.classList.remove("active");
+
+          // Set new active item
+          let items = carousel.querySelectorAll(".carousel-item");
+          items[index].classList.add("active");
+
+          // Show Modal
+          let modal = new bootstrap.Modal(
+            document.getElementById("imageModal")
+          );
+          modal.show();
+        });
+      });
+    </script>
+  </body>
+</html>
